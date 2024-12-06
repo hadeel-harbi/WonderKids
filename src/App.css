@@ -1,38 +1,228 @@
-.App {
-  text-align: center;
+.App-body {
+  background-color: white;
+  font-family: "Zain", sans-serif;
+}
+.zain-light {
+  font-family: "Zain", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.zain-regular {
+  font-family: "Zain", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.zain-bold {
+  font-family: "Zain", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.marhey-light {
+  font-family: "Marhey", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.marhey-regular {
+  font-family: "Marhey", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.marhey-bold {
+  font-family: "Marhey", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.primary-color {
+  color: #704fe6;
+}
+
+.primary-color-background {
+  background-color: #704fe6;
+}
+
+.secondary-color {
+  color: #ffbe17;
+}
+
+.secondary-color-background {
+  background-color: #ffbe17;
+}
+
+.icon-with-circle {
+  background-color: #fffdf7;
+  border-radius: 100%;
+  height: 30px;
+  width: 30px;
+  color: #704fe6;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-self: center;
+  align-content: center;
+}
+
+.App-main {
+  width: 100%;
+  justify-items: center;
+}
+
+.App-navbar {
+  background-color: #e7d8fe;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.main-container {
+  width: 100%;
+  height: 400px;
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.img1-position {
+  position: absolute;
+  top: 5%;
+  left: 15%;
+}
+
+.img2-position {
+  position: absolute;
+  bottom: 15%;
+  right: 20%;
+}
+
+.img3-position {
+  position: absolute;
+  bottom: 25%;
+  left: 25%;
+}
+
+.img4-position {
+  position: absolute;
+  top: 15%;
+  right: 10%;
+}
+
+.fc-position {
+  position: relative;
+}
+
+.fc-text-position-50 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fc-text-position-65 {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.space-100 {
+  height: 100px;
+}
+
+.space-50 {
+  height: 50px;
+}
+
+.app-button {
+  background-color: #ffbe17;
+  border: none;
+  border-radius: 8px;
+  color: black;
+  padding: 5px 55px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.quiz-size {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.quiz-position {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.choice-button {
+  background-color: white;
+  border: 2px solid #ffbe17;
+  border-radius: 12px;
+  color: black;
+  width: 300px;
+  height: 60px;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.choice-button:hover {
+  background-color: white;
+  border: 2px solid #704fe6;
+  border-radius: 12px;
+  color: black;
+  width: 300px;
+  height: 60px;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.correct-button {
+  background-color: #09b377;
+  border: 2px solid #09b377;
+  border-radius: 12px;
+  color: black;
+  width: 300px;
+  height: 60px;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.wrong-button {
+  background-color: #f84761;
+  border: 2px solid #f84761;
+  border-radius: 12px;
+  color: black;
+  width: 300px;
+  height: 60px;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.next-button {
+  background-color: #e7d8fe;
+  border: 2px solid #e7d8fe;
+  border-radius: 12px;
+  color: black;
+  padding: 15px 55px;
+
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
 }
