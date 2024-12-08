@@ -13,27 +13,27 @@ const ContactUs = () => {
               <h2 className="secondary-color marhey-regular">تواصل معنا</h2>
               <p className="text-light">كيف نستطيع مساعدتك؟</p>
               <form>
-                <div data-mdb-input-init class="form-outline mb-4">
+                <div data-mdb-input-init className="form-outline mb-4">
                   <input
                     type="text"
                     id="form4Example1"
-                    class="form-control"
+                    className="form-control"
                     placeholder="الاسم"
                   />
                 </div>
 
-                <div data-mdb-input-init class="form-outline mb-4">
+                <div data-mdb-input-init className="form-outline mb-4">
                   <input
                     type="email"
                     id="form4Example2"
-                    class="form-control"
+                    className="form-control"
                     placeholder="الايميل"
                   />
                 </div>
 
-                <div data-mdb-input-init class="form-outline mb-4">
+                <div data-mdb-input-init className="form-outline mb-4">
                   <textarea
-                    class="form-control"
+                    className="form-control"
                     id="form4Example3"
                     rows="4"
                     placeholder="الرسالة"
@@ -43,7 +43,7 @@ const ContactUs = () => {
                 <button
                   data-mdb-ripple-init
                   type="button"
-                  class="app-button mb-4"
+                  className="app-button mb-4"
                 >
                   إرسال
                 </button>

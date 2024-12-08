@@ -151,11 +151,14 @@
   height: 100%;
 }
 
-.quiz-position {
+.quiz-container {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-color: white;
+  width: 60%;
+  height: 80%;
 }
 
 .choice-button {
@@ -225,4 +228,18 @@
   text-decoration: none;
   display: inline-block;
   font-size: 20px;
+}
+
+.swal-button {
+  padding: 7px 19px;
+  border-radius: 2px;
+  color: white;
+  background-color: #704fe6;
+  font-size: 12px;
+  border: 1px solid #704fe6;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+}
+
+.swal-text {
+  font-size: 22px;
 }

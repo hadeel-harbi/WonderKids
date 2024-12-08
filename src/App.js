@@ -3,16 +3,20 @@ import LandingPage from "./components/LandingPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import QuizPage from "./components/QuizPage";
 import ActivitiesPage from "./components/ActivitiesPage";
+import { Provider } from "react-redux";
+import store from "./store";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/activities" element={<ActivitiesPage />} />
-        <Route path="/quiz" element={<QuizPage />} />
-      </Routes>
-    </BrowserRouter>
+    <Provider store={store}>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/activities" element={<ActivitiesPage />} />
+          <Route path="/quiz" element={<QuizPage />} />
+        </Routes>
+      </BrowserRouter>
+    </Provider>
   );
 }
 

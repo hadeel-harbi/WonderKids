@@ -68,7 +68,7 @@ const LandingPage = () => {
                         className="rounded rounded-circle border border-1 p-2 "
                         style={{ width: "40px", height: "40px" }}
                       >
-                        <i class="bi bi-instagram primary-color"></i>
+                        <i className="bi bi-instagram primary-color"></i>
                       </div>
                     </li>
 
@@ -77,7 +77,7 @@ const LandingPage = () => {
                         className="rounded rounded-circle border border-1 p-2 m-2 "
                         style={{ width: "40px", height: "40px" }}
                       >
-                        <i class="bi bi-facebook primary-color"></i>
+                        <i className="bi bi-facebook primary-color"></i>
                       </div>
                     </li>
 
@@ -86,7 +86,7 @@ const LandingPage = () => {
                         className="rounded rounded-circle border border-1 p-2 m-2 "
                         style={{ width: "40px", height: "40px" }}
                       >
-                        <i class="bi bi-whatsapp primary-color"></i>
+                        <i className="bi bi-whatsapp primary-color"></i>
                       </div>
                     </li>
                   </ul>

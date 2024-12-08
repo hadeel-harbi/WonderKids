@@ -38,7 +38,7 @@ const MainLayout = ({ children }) => {
 
             <div className="d-flex justify-content-center align-items-center rounded rounded-5 p-2 text-center primary-color-background">
               تواصل معنا
-              <i className="bi bi-arrow-up-right p-1 me-2 icon-with-circle text-center"></i>
+              <i className="bi bi-envelope-fill p-1 me-2 icon-with-circle text-center"></i>
             </div>
           </div>
         </nav>
@@ -46,51 +46,7 @@ const MainLayout = ({ children }) => {
 
       <main className="App-main">{children}</main>
 
-      <footer>
-        {/* <div className="container d-flex justify-content-center align-items-center text-center mt-5">
-          <div className="row">
-            <div className="col ">
-              <div>
-                <img src={logo} width={35} alt="logo" />
-                <h6 className="mx-2 pt-3 text-dark marhey-regular">
-                  WonderKids
-                </h6>
-              </div>
-
-              <div>
-                <ul className="d-inlinelist-inline">
-                  <li className="list-inline-item">
-                    <div
-                      className="rounded rounded-circle border border-1 p-2 "
-                      style={{ width: "40px", height: "40px" }}
-                    >
-                      <i class="bi bi-instagram primary-color"></i>
-                    </div>
-                  </li>
-
-                  <li className="list-inline-item">
-                    <div
-                      className="rounded rounded-circle border border-1 p-2 m-2 "
-                      style={{ width: "40px", height: "40px" }}
-                    >
-                      <i class="bi bi-facebook primary-color"></i>
-                    </div>
-                  </li>
-
-                  <li className="list-inline-item">
-                    <div
-                      className="rounded rounded-circle border border-1 p-2 m-2 "
-                      style={{ width: "40px", height: "40px" }}
-                    >
-                      <i class="bi bi-whatsapp primary-color"></i>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div> */}
-      </footer>
+      <footer></footer>
     </>
   );
 };
