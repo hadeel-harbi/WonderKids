@@ -36,7 +36,7 @@ const ActivitiesPage = () => {
                 </div>
 
                 <div className="col-sm-4 fc-position ">
-                  <Link to="/quiz" className="nav-link">
+                  <Link to="/challenge" className="nav-link">
                     <img src={fc3} width={300} alt="" />
                     <h3 className="fc-text-position-50 marhey-bold">
                       ابدأ التحدي

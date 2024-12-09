@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import img5 from "../images/Element5.png";
 import img6 from "../images/Element8.png";
 import contact from "../images/Contact.png";
 
 const ContactUs = () => {
+  const [mailTitle, setMailTitle] = useState("");
+  const [mailBody, setMailBody] = useState("");
+
   return (
     <>
       <div className="row d-flex justify-content-center">
@@ -15,38 +18,34 @@ const ContactUs = () => {
               <form>
                 <div data-mdb-input-init className="form-outline mb-4">
                   <input
-                    type="text"
-                    id="form4Example1"
-                    className="form-control"
-                    placeholder="الاسم"
-                  />
-                </div>
-
-                <div data-mdb-input-init className="form-outline mb-4">
-                  <input
                     type="email"
-                    id="form4Example2"
+                    id="title"
                     className="form-control"
-                    placeholder="الايميل"
+                    placeholder="العنوان"
+                    onChange={(e) => setMailTitle(e.target.value)}
                   />
                 </div>
 
                 <div data-mdb-input-init className="form-outline mb-4">
                   <textarea
                     className="form-control"
-                    id="form4Example3"
+                    id="body"
                     rows="4"
                     placeholder="الرسالة"
+                    onChange={(e) => setMailBody(e.target.value)}
                   ></textarea>
                 </div>
-
-                <button
-                  data-mdb-ripple-init
-                  type="button"
-                  className="app-button mb-4"
+                <a
+                  href={`mailto:hadeel-4102@outlook.com?subject=${mailTitle}&body=${mailBody}`}
                 >
-                  إرسال
-                </button>
+                  <button
+                    data-mdb-ripple-init
+                    type="button"
+                    className="app-button mb-4"
+                  >
+                    إرسال
+                  </button>
+                </a>
               </form>
             </div>
             <div className="col" style={{ position: "relative" }}>
@@ -69,7 +68,7 @@ const ContactUs = () => {
                 style={{
                   position: "absolute",
                   left: "120px",
-                  bottom: "60px",
+                  bottom: "40px",
                 }}
               ></img>
             </div>

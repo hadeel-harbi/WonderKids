@@ -32,7 +32,7 @@ const Questions = () => {
   const scoreAlert = () => {
     swal({
       title: "إنتهيت الإختبار",
-      text: `درجتك : ${score}`,
+      text: `درجتك : ${score} /50`,
     });
     dispatch({
       type: "NEWSCORE",
@@ -50,12 +50,12 @@ const Questions = () => {
           className={
             selectedAnswer === choice
               ? isCorrect
-                ? "correct-button" //green
-                : "wrong-button" //red
+                ? "correct-button"
+                : "wrong-button"
               : choice === currentQuestion.correctAnswer &&
                 selectedAnswer !== null &&
                 !isCorrect
-              ? "correct-button" //green
+              ? "correct-button"
               : "choice-button"
           }
           onClick={selectedAnswer ? () => {} : () => answerClick(choice)}

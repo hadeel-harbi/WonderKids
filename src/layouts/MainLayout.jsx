@@ -31,13 +31,20 @@ const MainLayout = ({ children }) => {
                   </Link>
                 </li>
                 <li className="list-inline-item rounded rounded-5 px-3 py-1 me-2 text-center primary-color-background">
-                  عن موقعنا
+                  <Link to="/aboutus" className="nav-link">
+                    عن موقعنا
+                  </Link>
                 </li>
               </ul>
             </div>
 
             <div className="d-flex justify-content-center align-items-center rounded rounded-5 p-2 text-center primary-color-background">
-              تواصل معنا
+              <a
+                href={`mailto:hadeel-4102@outlook.com`}
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                تواصل معنا
+              </a>
               <i className="bi bi-envelope-fill p-1 me-2 icon-with-circle text-center"></i>
             </div>
           </div>
