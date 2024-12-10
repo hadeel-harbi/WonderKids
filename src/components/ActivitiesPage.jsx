@@ -25,10 +25,15 @@ const ActivitiesPage = () => {
                   </h3>
                 </div>
               </div>
-              <div className="row mt-3 me-5">
+              <div className="row mt-3 me-2">
                 <div className="col-sm-4 fc-position ">
                   <Link to="/quiz" className="nav-link">
-                    <img src={fc1} width={300} alt="" />
+                    <img
+                      src={fc1}
+                      width={300}
+                      alt=""
+                      className="mobile-visible my-3"
+                    />
                     <h3 className="fc-text-position-50 marhey-bold">
                       ابدأ الاختبار
                     </h3>
@@ -37,7 +42,12 @@ const ActivitiesPage = () => {
 
                 <div className="col-sm-4 fc-position ">
                   <Link to="/challenge" className="nav-link">
-                    <img src={fc3} width={300} alt="" />
+                    <img
+                      src={fc3}
+                      width={300}
+                      alt=""
+                      className="mobile-visible my-3"
+                    />
                     <h3 className="fc-text-position-50 marhey-bold">
                       ابدأ التحدي
                     </h3>

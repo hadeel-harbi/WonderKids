@@ -13,7 +13,12 @@ const MainLayout = ({ children }) => {
         <nav className="navbar App-navbar ">
           <div className="container px-3 ">
             <div className="d-flex align-items-center justify-content-center">
-              <img src={logo} width={35} alt="logo" />
+              <img
+                src={logo}
+                width={35}
+                alt="logo"
+                className="mobile-visible"
+              />
               <h6 className="mx-2 pt-3 text-dark marhey-regular">WonderKids</h6>
             </div>
 

@@ -43,7 +43,7 @@ const ChallengePage = () => {
                       alt="puzzle"
                       border="0"
                       height={"250px"}
-                      className="m-2"
+                      className="m-2 mobile-visible"
                     />
                   </div>
                 </div>
@@ -51,6 +51,7 @@ const ChallengePage = () => {
                   <div className="col">
                     {currentPuzzle.choices.map((choice, index) => (
                       <button
+                        key={index}
                         className={
                           selectedAnswer === choice.number
                             ? isCorrect
@@ -76,6 +77,7 @@ const ChallengePage = () => {
                           alt="puzzle"
                           border="0"
                           height={"70px"}
+                          className="mobile-visible"
                         />
                       </button>
                     ))}
